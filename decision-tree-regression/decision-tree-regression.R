@@ -4,8 +4,7 @@
 dataset = read.csv('Position_Salaries.csv')
 dataset = dataset[2:3]
 
-# Fitting the Regression Model to the dataset
-#install.packages('rpart')
+# Fitting the Decision Tree Regression Model to the dataset
 library(rpart)
 regressor = rpart(formula = Salary ~., 
                   data = dataset,
